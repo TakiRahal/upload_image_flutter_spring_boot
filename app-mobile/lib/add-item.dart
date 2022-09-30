@@ -34,7 +34,7 @@ class _AddItemPageState extends State<AddItemPage> {
       };
     }).toList()}');
 
-    var url = Uri.parse('http://192.168.110.96:8080/api/offer/add');
+    var url = Uri.parse('http://Your_IP:8080/api/offer/add');
 
     // Await the http get response, then decode the json-formatted response.
     var response = await http.post(

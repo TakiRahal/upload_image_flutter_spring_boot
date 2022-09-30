@@ -1,16 +1,34 @@
-# upload_images
+# Add new Post and Upload one or Multiple images
 
-A new Flutter project.
+## Backend Project
 
-## Getting Started
+### Clone Project
+    git clone https://github.com/TakiRahal/upload_images_flutter_spring_boot.git
+    
+### Update configuration for database
+    cd api  
+    Update Configuration:
+        spring.datasource.url=jdbc:postgresql://localhost:5432/your_database
+        spring.datasource.username=your_username
+        spring.datasource.password=your_password
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### Run backend 
+    mvn spring-boot:run
+    
+    
+### Urls:
+        List offers: http://Your_IP:8080/api/offer/list
+        Add Offer: http://Your_IP:8080/api/offer/add
+    
+    
+    
+## App Mobile Project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    cd app-mobile
+    flutter run 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Demo
+
+[![IMAGE ALT TEXT HERE](https://github.com/TakiRahal/elastic-apm/blob/main/server-apm/demo.png)](https://www.youtube.com/watch?v=hYFx-vl1JMg)

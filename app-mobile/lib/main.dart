@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
   dynamic pageOffers;
 
   Future<dynamic> fetchOffers() async {
-    var url = Uri.parse('http://192.168.110.96:8080/api/offer/list');
+    var url = Uri.parse('http://Your_IP:8080/api/offer/list');
 
     // Await the http get response, then decode the json-formatted response.
     var response = await http.get(url);
