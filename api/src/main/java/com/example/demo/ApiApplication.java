@@ -1,13 +1,13 @@
-package com.upload.images;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UploadApplication {
+public class ApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UploadApplication.class, args);
+        SpringApplication.run(ApiApplication.class, args);
     }
 
 }
