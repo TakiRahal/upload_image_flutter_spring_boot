@@ -27,7 +27,7 @@ public class OfferController {
     @Autowired
     OfferService offerService;
 
-    @PostMapping("/add")
+    @PostMapping("add")
     public ResponseEntity<OfferDTO> createOffer(@RequestBody OfferDTO offerDTO)  {
         log.info("REST request to save Offer : {}", offerDTO);
         OfferDTO result = offerService.save(offerDTO);
@@ -42,7 +42,7 @@ public class OfferController {
     }
 
 
-    @GetMapping("/list")
+    @GetMapping("list")
     public ResponseEntity<Page<OfferDTO>> getAllOffers(Pageable pageable)  {
         log.info("REST request to get all Offers : {}");
         Page<OfferDTO> result = offerService.fetchOffers(pageable);
